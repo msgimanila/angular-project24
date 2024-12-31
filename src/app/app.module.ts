@@ -7,7 +7,9 @@ import { AppComponent } from './app.component';
 @NgModule({
   declarations: [
     AppComponent,
-    TabOneComponent
+    TabOneComponent,  // Add this component
+    TabTwoComponent,  // Add this component
+    TabThreeComponent // Add this component
   ],
   imports: [
     BrowserModule,
