@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-quickstart';
+   activeTab: string = 'tab1';
+
+  // Method to handle tab switching
+  setActiveTab(tab: string): void {
+    this.activeTab = tab;
 }
