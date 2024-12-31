@@ -6,6 +6,52 @@
     <circle cx="1720" cy="264" r="379" fill="url(#paint1_linear_39_143)" />
   </g>
 </svg>
+<div style="font-family: Arial, sans-serif">
+  <!-- Navigation Bar -->
+  <nav style="display: flex; gap: 10px; margin-bottom: 20px;">
+    <button
+      style="padding: 10px 20px; cursor: pointer; border-radius: 5px; border: none;"
+      [ngStyle]="{
+        backgroundColor: activeTab === 'tab1' ? '#0070f3' : '#eaeaea',
+        color: activeTab === 'tab1' ? 'white' : 'black'
+      }"
+      (click)="setActiveTab('tab1')"
+    >
+      Tab One
+    </button>
+    <button
+      style="padding: 10px 20px; cursor: pointer; border-radius: 5px; border: none;"
+      [ngStyle]="{
+        backgroundColor: activeTab === 'tab2' ? '#0070f3' : '#eaeaea',
+        color: activeTab === 'tab2' ? 'white' : 'black'
+      }"
+      (click)="setActiveTab('tab2')"
+    >
+      Tab Two
+    </button>
+    <button
+      style="padding: 10px 20px; cursor: pointer; border-radius: 5px; border: none;"
+      [ngStyle]="{
+        backgroundColor: activeTab === 'tab3' ? '#0070f3' : '#eaeaea',
+        color: activeTab === 'tab3' ? 'white' : 'black'
+      }"
+      (click)="setActiveTab('tab3')"
+    >
+      Tab Three
+    </button>
+  </nav>
+
+  <!-- Dynamic Content Rendering -->
+  <div *ngIf="activeTab === 'tab1'">
+    <app-tab-one></app-tab-one>
+  </div>
+  <div *ngIf="activeTab === 'tab2'">
+    <app-tab-two></app-tab-two>
+  </div>
+  <div *ngIf="activeTab === 'tab3'">
+    <app-tab-three></app-tab-three>
+  </div>
+</div>
 
 <div id="content">
   <div class="header">
