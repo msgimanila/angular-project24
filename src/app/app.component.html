@@ -1,4 +1,4 @@
-<svg id="background" width="1728" height="1235" viewBox="0 0 1728 1235" fill="none" xmlns="http://www.w3.org/2000/svg">
+ <svg id="background" width="1728" height="1235" viewBox="0 0 1728 1235" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g opacity="0.75" filter="url(#filter0_f_39_143)">
       <circle cy="1000" r="264" fill="url(#paint0_linear_39_143)" />
     </g>
@@ -24,5 +24,49 @@
         <li><a href="https://docs.netlify.com/">Netlify Docs</a></li>
         <li><a href="https://angular.io/">Angular Docs</a></li>
       </ul>
+    </div>
+    <div class="overview">
+      <h3>Developing an Angular App: A Quick Overview</h3>
+      <p>Building an Angular app involves leveraging a powerful framework for creating dynamic, single-page web applications. Here's a brief rundown:</p>
+      <ul>
+        <li><strong>Setup:</strong>
+          <p>Use the Angular CLI to scaffold your project. Install dependencies using <code>npm</code> and start the development server.</p>
+          <pre><code>ng new my-angular-app
+cd my-angular-app
+ng serve</code></pre>
+        </li>
+        <li><strong>Structure:</strong>
+          <p>Angular projects are modular. Key parts include:
+            <ul>
+              <li><strong>Components:</strong> For the UI.</li>
+              <li><strong>Services:</strong> For business logic and data handling.</li>
+              <li><strong>Modules:</strong> To organize components and services logically.</li>
+            </ul>
+          </p>
+        </li>
+        <li><strong>Development:</strong>
+          <p>
+            <ul>
+              <li>Create components using <code>ng generate component component-name</code>.</li>
+              <li>Use Angular’s two-way data binding (<code>[(ngModel)]</code>) to sync the UI with logic.</li>
+              <li>Handle navigation with Angular Router.</li>
+              <li>Manage data with services and HTTP Client for API calls.</li>
+            </ul>
+          </p>
+        </li>
+        <li><strong>Features:</strong>
+          <p>
+            <ul>
+              <li><strong>TypeScript:</strong> Angular apps are built with TypeScript, ensuring type safety.</li>
+              <li><strong>Reactive Programming:</strong> Leverage RxJS for handling asynchronous data streams.</li>
+              <li><strong>Testing:</strong> Built-in tools like Jasmine and Karma ensure reliable app testing.</li>
+            </ul>
+          </p>
+        </li>
+        <li><strong>Deployment:</strong>
+          <p>Build the app with <code>ng build --prod</code> for production-ready code, then deploy to a web server like Firebase, AWS, or Nginx.</p>
+        </li>
+      </ul>
+      <p>Angular’s rich ecosystem and strong community make it ideal for large-scale applications. Happy coding! 🚀</p>
     </div>
   </div>
